@@ -51,6 +51,7 @@ function onChange() {
   if (inputField.value === '') {
     setSelectedLocation(null)
   }
+  dispatch("text_changed", inputField.value);
 }
 
 function onKeyDown(event) {
